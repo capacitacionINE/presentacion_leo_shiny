@@ -1,0 +1,54 @@
+
+#devtools::install_github("Klauslehmann/calidad")
+
+
+library(calidad)
+options(survey.lonely.psu = "certainty")
+
+
+# Declarar diseño complejo
+dc_ene <- survey::svydesign(ids = ~varunit, strata = ~varstrat, data = ene, weights = ~fe)
+
+
+##########################
+# ESTIMACIÓN DE PROPORCIÓN
+##########################
+
+# Crear insumos para la evaluación
+insumos1 <- crear_insumos_prop(desocupado, fdt, disenio = dc_ene)
+insumos2 <- crear_insumos_prop(desocupado, region, subpop = fdt, disenio = dc_ene)
+
+# Hacer la evaluación
+evaluacion1 <- evaluar_calidad_prop(insumos1)
+evaluacion2 <- evaluar_calidad_prop(insumos2)
+
+
+# Visualización
+tabla_html(evaluacion1)
+tabla_html(evaluacion2)
+
+
+
+#############################
+# ESTIMACIÓN DE NIVEL (TOTAL)
+#############################
+
+# Crear insumos para la evaluación
+insumos1 <- crear_insumos_tot(desocupado, disenio =  dc_ene)
+insumos2 <- crear_insumos_tot(desocupado, sexo, disenio = dc_ene)
+
+
+# Hacer la evaluación
+evaluacion1 <- evaluacion_calidad_tot(insumos1)
+evaluacion2 <- evaluacion_calidad_tot(insumos2)
+
+
+# Visualización
+tabla_html(evaluacion1)
+tabla_html(evaluacion2)
+
+
+
+
+
+
