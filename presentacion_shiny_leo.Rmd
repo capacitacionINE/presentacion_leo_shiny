@@ -1,6 +1,6 @@
 ---
-title: "Presentación CEPAL"
-subtitle: "Codificación automática"  
+title: "Presentación maqueta shiny calidad"
+subtitle: "shiny"  
 author: 
 date: '`r Sys.Date()`'
 output:
@@ -159,6 +159,20 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
+
+class: center, middle
+
+.big-font[
+¡Veamos la aplicación!
+]
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
 # Próximos pasos
 
 **Paquete calidad**
@@ -191,19 +205,6 @@ background-position: 100% 0%
 
 - Coordinación con SDTI, para asegurar la calidad de la aplicación
 
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-
-class: center, middle
-
-.big-font[
-¡Veamos la aplicación!
-]
 
 
 
