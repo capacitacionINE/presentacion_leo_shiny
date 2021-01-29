@@ -30,7 +30,7 @@ class: center, middle
 
 ## Proyecto Estratégico de Servicios Compartidos
 
-### Enero 2020
+### Enero 2021
 
 
 ```{r setup, include=FALSE}
@@ -153,6 +153,46 @@ background-position: 100% 0%
 
 Estamos usando el paquete calidad dentro de shiny
 
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Próximos pasos
+
+**Paquete calidad**
+
+- Incorporar comentarios de SDT y de Subdepartamento de Marcos y Muestras (están llegando)
+
+--
+
+- Evaluar incorporación de precisión para la mediana (sugerencia de Subdepartamento de Marcos y Muestras)
+
+--
+
+- Coordinar apoyo del Departamento de Metodología    
+
+--
+
+- Traducir documentación a inglés (requisito para entrar a CRAN) 
+
+--
+
+**Shiny**
+
+- Optimizar las funcionalidades actuales 
+
+--
+
+- Evaluar incorporación de nuevas funcionalidades
+
+--
+
+- Coordinación con SDTI, para asegurar la calidad de la aplicación
+
+
+
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
@@ -179,5 +219,5 @@ class: center, middle
 
 ## Proyecto Estratégico de Servicios Compartidos
 
-### Enero 2020
+### Enero 2021
 
